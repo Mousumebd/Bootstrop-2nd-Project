@@ -1,0 +1,300 @@
+html{
+  scroll-behavior: smooth;
+}
+body,h1,h2,h3,h4,h5,h6{
+  font-family: 'Work Sans', sans-serif;
+}
+img{
+  max-width: 100%;
+}
+/* Header-Style */
+.my-header .navbar-brand{
+  font-size: 20px;
+  font-weight: bold;
+}
+.my-header span{
+  display: inline-block;
+  background: #5ba533;
+  color: #fff;
+  height: 43px;
+  width: 40px;
+  border-radius: 10px;
+  font-size: 28px;
+  text-align: center;
+  position: relative;
+  top: 2px;
+  margin-right: 10px;
+}
+.fa-app-store{
+  margin-top: 9px;
+}
+/* Slider-section */
+.slider-section{
+  background: url(img/m1.jpg) no-repeat center center;
+  padding: 200px 0;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+.slider-section::after{
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+.my-menu{
+  padding: 0 20px;
+}
+.slider-caption h4{
+  margin-bottom: 35px;
+}
+.slider-caption h2{
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+.slider-caption .btn{
+  background: #5ba533;
+  padding: 10px 20px;
+  font-size: 30px;
+  font-weight: 600;
+}
+.slider-caption .form-control{
+  padding: 18px 20px;
+}
+/* number-counter */
+.number-counter .h2{
+  font-size: 40px;
+  font-weight: 600;
+}
+.number-counter .text-1{
+  font-size: 16px;
+}
+
+/* About-section */
+.about-section{
+  background: #f7f9ff;
+}
+.about-text-left{
+  margin-top: 120px;
+}
+.about-text-left .text-2{
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+/* feature-section */
+.feature-item{
+  height: 300px;
+  box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.1);
+}
+.left-img-sec{
+  width: 40%;
+  overflow: hidden;
+  border-radius: 5px 0 0 5px;
+}
+
+.left-text-sec{
+  width: 60%;
+  padding: 25px;
+}
+
+.left-img-sec img{
+  height: 100%;
+  width: auto;
+  max-width: inherit;
+  position: relative;
+  left: -80px;
+}
+
+/* portfolio-section */
+.portfolio-item a{
+  position: relative;
+  display: block;
+  
+}
+.portfolio-item a::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(98, 120, 223, 0.7);
+  opacity: 0;
+  visibility: hidden;
+  transition: .5s;
+}
+.portfolio-item:hover a::after{
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Pricing-table */
+
+.min-section-bg{
+  background-color: #f7f9ff;
+}
+
+/* pricing-table-section */
+.pricing-item{
+  background: #fff;
+  padding: 50px;
+  box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.2);
+  border-radius: 5px;
+}
+.pricing-item ul{
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  margin-bottom: 45px;
+}
+.pricing-item ul li{
+  margin: 20px 0;
+  font-size: 20px;
+  color: #777;
+}
+.pricing-item ul li span{
+  color: #6278df;
+  font-size: 25px;
+  font-weight: 600;
+  display: inline-block;
+  width: 40px;
+}
+.pricing-buttn a{
+  border-color: #6278df;
+  border-width: 2px;
+  color: #6278df;
+  padding: 14px 30px;
+  font-size: 23px;
+  box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.4);
+}
+/* testimonial-section */
+.mou img{
+  width: 85px;
+  margin-right: 18px;
+}
+.mou{
+  width: 220px;
+  margin: auto;
+}
+.mou-text{
+  text-align: left;
+  position: relative;
+  top: 10px;
+}
+.fa-quote-left{
+  font-size: 70px;
+  color: #cfcece;
+}
+
+/* about-section */
+.about-item{
+  margin-top: 90px;
+}
+.about-item .card img{
+  width: 130px;
+  height: auto;
+  margin-top: -70px;
+  margin-left: 15px;
+}
+
+/* content */
+.contact-form .card{
+  box-shadow:  2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.2);
+  padding: 40px;
+}
+
+/* app-section */
+.app-section{
+  margin-top: 150px;
+}
+.mou-btn{
+  margin-right: 10px;
+}
+
+
+
+/* Responsive Css */
+@media(max-width:992px){
+  .about-text-left {
+    margin-top: 0px;
+}
+.slider-caption .btn {
+    padding: 15px 20px;
+    font-size: 22px;
+}
+.my-header span { 
+    background: #ffffff; 
+}
+}
+@media(max-width:625px){
+.slider-caption h2 {
+    margin-bottom: 47px;
+    font-size: 24px;
+}
+.slider-caption h4 {
+    margin-bottom: 14px;
+    font-size: 15px;
+}
+.slider-caption .btn {
+    padding: 18px 20px;
+    font-size: 20px;
+    width: 133px;
+    border-radius: 5px;
+}
+}
+@media(max-width:576px){
+.slider-caption .btn {
+  padding: 23px 20px;
+  font-size: 12px;
+}
+}
+
+@media(max-width:360px){
+.slider-caption h4 {
+  margin-bottom: 8px;
+  font-size: 9px;
+}
+.mou-in{
+    font-size: 8px;
+    height: auto;
+    width: 90px;
+}
+.slider-caption .form-control {
+    padding: 12px 6px;
+}
+.slider-caption .btn {
+    padding: 11px 16px;
+    font-size: 10px;
+    width: 90px;
+}
+.slider-section {
+    padding: 110px 0;
+    height: 415px;
+}
+h1 {
+    font-size: 27px;
+}
+.pricing-buttn a {
+    font-size: 22px;
+}
+.mou-btn {
+    margin: 16px 10px;
+}
+.mou-btn0 {
+    font-size: 19px;
+}
+.mou-input{
+    font-size: 16px;
+    height: auto;
+    width: 214px;
+}
+
+}
+
+
